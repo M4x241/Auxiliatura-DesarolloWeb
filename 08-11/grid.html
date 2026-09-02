@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="principal">
+        <div class="sectionHeader"> 
+            <div class="redes">
+                <button>fa</button>
+                <button>is</button>
+                <button>tik</button>
+                <button>link</button>
+            </div>
+            <div class="menu">
+                <img src="./images/night.png" alt="">
+                <div></div>
+                <div class="links">
+                    <a href="">mi perfil</a>
+                    <a href="">sobre la universidad</a>
+                    <a href="">proyectos</a>
+                    <a href="">informacion</a>
+                    <a href="">datos generales</a>
+                    <a href="">resenas</a>
+                </div>
+            </div>
+               
+        </div>
+        <div class="sectionCarrusel"> 
+            <img class="imgcarrusel" src="./images/night.png" alt="">
+            <h1>Mi carrusel</h1>
+            <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas eos eveniet neque qui saepe eaque dolorum perspiciatis doloremque unde, totam, alias a nemo architecto blanditiis dicta omnis numquam sunt error?
+            Voluptatem suscipit quod illo, commodi vitae est, laboriosam ab, magni nihil eaque recusandae. Inventore ut soluta maxime dolorum cumque sequi assumenda quasi, nam est, id dignissimos quos, sit fuga repellat.</p>
+        </div>
+        <div class="sectionCard"> 
+            <button class="card">1</button>
+            <button class="card">2</button>
+            <button class="card">3</button>
+            <button class="card">4</button>
+            <button class="card">5</button>
+            <button class="card">6</button>
+        </div>
+        <div class="footer"> pie de pagina</div>
+    </div>
+</body>
+</html>
+
+<style>
+    img{
+        width: 200px;
+    }
+    
+    .sectionHeader{
+        background-color: rgb(84, 84, 119);
+    }
+    .menu{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+    .links{
+        display: flex;
+        gap: 10px;
+        color: white;
+        text-decoration: none;
+    }
+    a{
+        background-color: white;
+        border-radius: 20px;
+    }
+    .sectionCarrusel{
+        background-color: chocolate;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+
+    }
+    .descripcion{
+        grid-column-start: 2;
+        grid-row-start: 2;
+    }
+    .imgcarrusel{
+        width: 500px;
+        height: 500px;
+        border-radius: 50%;
+        grid-row: span 2 / span 2;
+    }
+    .sectionCard{
+        background-color: rgb(37, 158, 0);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 10px;
+        
+    }
+    .card{
+        width: 50%;
+        height: 50px;
+    }
+</style>
