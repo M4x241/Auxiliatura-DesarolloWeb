@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="cabecera">
+            <div class="logo">
+                <img src="./img/images.jpg" alt="Not found" width="100px" height="100px">
+            </div>
+            <div class="universidad">
+                <h2 style="color: red;">Universidad de San Francisco Xavier</h2>
+                <h3 style="color: blue;">Facultad de Tecnologia</h3>
+                <p>Carrera Ing Ciencias C.</p>
+                <p>Semestre 2 2026</p>
+            </div>
+            <div style="width: 200px;">
+                <p><span style="color: red;">Sucr</span>
+                    <span style="color: yellow;">e - Bol</span>
+                    <span style="color: green;">ivia</span></p>
+            </div>
+        </div>
+        <div class="examen">
+            <div class="botones" style="background-color: rgb(32, 32, 31);">
+                <button>Ejercicio 1</button>
+                <button>Ejercicio 2</button>
+                <button>Ejercicio 3</button>
+                <button>Ejercicio 4</button>
+            </div>
+            <div class="preguntas">
+                <p>Nombre de Estudiante: Max Jherzon Rodas Palacios</p>
+                <p>Ejercicios Elegidos :</p>
+                <ul>
+                    <li>Ejercicio 1. nro en el banco de preguntas...</li>
+                    <li>Ejercicio 2. nro en el banco de preguntas...</li>
+                    <li>Ejercicio 3. nro en el banco de preguntas...</li>
+                    <li>Ejercicio 4. nro en el banco de preguntas...</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <table>
+        <tr style="background-color: red;"></tr>
+    </table>
+
+</body>
+</html>
+
+<style>
+    .container{
+        background-color: rgb(213, 218, 218);
+        width: 900px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cabecera{
+        background-color: rgb(48, 131, 162);
+        width: 900px;
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+    }
+    .logo{
+        display: flex;
+        justify-content: right;
+        width: 200px;
+        
+    }
+
+    .universidad{
+        text-align: center;
+        width: 500px;
+    }
+
+    .examen{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .botones{
+        display: flex;
+        flex-direction: column;
+        width: 120px;
+        align-items: center;
+        justify-content: center;
+    }
+    button{
+        width: 100px;
+        height: 30px;
+    }
+
+    .preguntas{
+        width: 780px;
+    }
+</style>
